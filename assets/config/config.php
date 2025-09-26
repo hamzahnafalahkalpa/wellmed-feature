@@ -5,7 +5,7 @@ use Hanafalah\WellmedFeature\{
 };
 
 return [
-    "namespace"     => "Hanafalah\WellmedFeature",
+    "namespace"     => "Hanafalah\\WellmedFeature",
     "paths"         => [
         "local_path"   => "repositories",
         "base_path"    => __DIR__.'\\..\\'
@@ -15,8 +15,6 @@ return [
         ],
     ],
     'commands'  => [
-        Commands\SeedCommand::class,
-        Commands\MigrateCommand::class,
         Commands\InstallMakeCommand::class
     ],
     'libs' => [

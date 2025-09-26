@@ -8,8 +8,6 @@ use Hanafalah\WellmedFeature\Commands;
 class CommandServiceProvider extends ServiceProvider
 {
     protected $__commands = [
-        Commands\MigrateCommand::class,
-        Commands\SeedCommand::class,
         Commands\InstallMakeCommand::class
     ];
 
