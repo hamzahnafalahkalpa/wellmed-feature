@@ -11,11 +11,72 @@ class MasterFeatureSeeder extends Seeder
 
     protected $__features = [
         [
+            "name" => "Sistem Pelayanan Klinik",
+            "alias" => "Core",
+            "version" => [
+                "version" => "1.0",
+                "price" => 0
+            ],
+            "permissions" => [
+            ]
+        ],
+        [
+            "name" => "Hr Module",
+            "label" => "HR",
+            "version" => [
+                "version" => "1.0",
+                "price" => 0
+            ],
+            "permissions" => [
+                'api.employee-management.index',
+            ],
+            "childs" => [
+                [
+                    "name" => "Kepegawaian",
+                    "label" => "Employee",
+                    "version" => [
+                        "version" => "1.0",
+                        "price" => 0
+                    ],
+                    "permissions" => [
+                        'api.employee-management.employee.*'
+                    ]
+                ]
+            ]
+        ],
+        [
+            'name' => 'Finance',
+            'label' => 'Finance',
+            'version' => [
+                'version' => '1.0',
+                'price' => 0
+            ],
+            'permissions' => [
+                'api.finance.index',
+            ],
+            'childs' => [
+                [
+                    'name' => 'Journal Entry',
+                    'label' => 'Journal Entry',
+                    'version' => [
+                        'version' => '1.0',
+                        'price' => 0
+                    ],
+                    'permissions' => [
+                        'api.finance.journal-entry.*'
+                    ]
+                ]
+            ]
+        ],
+        [
             "name" => "Sistem Rekam Medis Elektronik",
             "label" => "EMR",
             "version" => [
                 "version" => "1.0",
                 "price" => 0
+            ],
+            "permissions" => [
+                'api.'
             ],
             "childs" => [
                 [
