@@ -12,7 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         try {
-            \Illuminate\Support\Facades\Artisan::call('telescope:pause');
             $this->call([
                 MasterPermissionSeeder::class,
                 MasterFeatureSeeder::class
