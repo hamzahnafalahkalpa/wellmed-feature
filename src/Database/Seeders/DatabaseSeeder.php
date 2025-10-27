@@ -17,7 +17,6 @@ class DatabaseSeeder extends Seeder
                 MasterFeatureSeeder::class
             ]);
         } catch (\Throwable $th) {
-            dd($th->getMessage());
             throw $th;
         }
     }
